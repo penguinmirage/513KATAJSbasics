@@ -1,16 +1,5 @@
 @font-face {
   font-family: "TT Lakes";
-  src: url("fonts/TTLakes-Bold.eot");
-  src: local("fonts/TT Lakes Bold"), local("fonts/TTLakes-Bold"),
-    url("fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
-    url("fonts/TTLakes-Bold.woff") format("woff"),
-    url("fonts/TTLakes-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "TT Lakes";
   src: url("fonts/TTLakes-Regular.eot");
   src: local("fonts/TT Lakes Regular"), local("fonts/TTLakes-Regular"),
     url("fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
@@ -18,4 +7,47 @@
     url("fonts/TTLakes-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+.main {
+  min-width: 320px;
+}
+
+.main__block-title {
+  font-family: "TT Lakes", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #7e7e82;
+  padding: 16px 0 16px 32px;
+  background-color: linear-gradient(to bottom, #f8f8f8, #ffffff);
+}
+
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 16px;
+  margin-top: 24px;
+  margin-left: 32px;
+}
+
+.container__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  height: 72px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.container__item:hover {
+  cursor: pointer;
+}
+
+.container__item-link {
+  width: 40px;
+  height: 40px;
 }
