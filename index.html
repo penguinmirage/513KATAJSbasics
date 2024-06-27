@@ -3,80 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>Ремонт техники различных брендов</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <!-- There is no header in this page -->
-    <main class="main swiper">
+    <main class="main">
       <h3 class="main__block-title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h3>
-      <div class="main__container swiper-wrapper">
-        <a class="container__item swiper-slide">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <a class="swiper-slide">
+            <img src="images/cat1.svg" />
+          </a>
+          <a class="swiper-slide"><img src="images/cat2svg.svg" /></a>
+          <a class="swiper-slide"><img src="images/cat3.svg" /></a>
+          <a class="swiper-slide"><img src="images/cat4.svg" /></a>
+          <a class="swiper-slide"><img src="images/cat5svg.svg" /></a>
+          <a class="swiper-slide"><img src="images/cat6.svg" /></a>
+          <a class="swiper-slide"><img src="images/cat7.svg" /></a>
+          <a class="swiper-slide"><img src="images/cat8.svg" /></a>
+          <a class="swiper-slide"><img src="images/cat1.svg" /></a>
+          <a class="swiper-slide"><img src="images/cat2svg.svg" /></a>
+          <a class="swiper-slide"><img src="images/cat3.svg" /></a>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="main__container">
+        <a class="container__item">
           <img class="container__item-logo" src="images/1.svg" alt="#" />
           <p class="container__item-name"></p>
           <img class="container__item-link" src="images/ic/go.svg" alt="#" />
         </a>
-        <a class="container__item swiper-slide">
+        <a class="container__item">
           <img class="container__item-logo" src="images/2.svg" alt="#" />
           <p class="container__item-name"></p>
           <img class="container__item-link" src="images/ic/go.svg" alt="#" />
         </a>
-        <a class="container__item swiper-slide">
+        <a class="container__item">
           <img class="container__item-logo" src="images/3.svg" alt="#" />
           <p class="container__item-name"></p>
           <img class="container__item-link" src="images/ic/go.svg" alt="#" />
         </a>
-        <a class="container__item swiper-slide">
+        <a class="container__item">
           <img class="container__item-logo" src="images/4.svg" alt="#" />
           <p class="container__item-name"></p>
           <img class="container__item-link" src="images/ic/go.svg" alt="#" />
         </a>
-        <a class="container__item swiper-slide">
+        <a class="container__item">
           <img class="container__item-logo" src="images/5.svg" alt="#" />
           <p class="container__item-name"></p>
           <img class="container__item-link" src="images/ic/go.svg" alt="#" />
         </a>
-        <a class="container__item swiper-slide">
+        <a class="container__item">
           <img class="container__item-logo" src="images/6.svg" alt="#" />
           <p class="container__item-name"></p>
           <img class="container__item-link" src="images/ic/go.svg" alt="#" />
         </a>
-        <a class="container__item swiper-slide hidden-item">
+        <a class="container__item hidden-item">
           <img class="container__item-logo" src="images/7.svg" alt="#" />
           <p class="container__item-name"></p>
           <img class="container__item-link" src="images/ic/go.svg" alt="#" />
         </a>
-        <a class="container__item swiper-slide hidden-item">
+        <a class="container__item hidden-item">
           <img class="container__item-logo" src="images/8.svg" alt="#" />
           <p class="container__item-name"></p>
           <img class="container__item-link" src="images/ic/go.svg" alt="#" />
         </a>
-        <a class="container__item swiper-slide hidden-item">
+        <a class="container__item hidden-item">
           <img class="container__item-logo" src="images/9.svg" alt="#" />
           <p class="container__item-name"></p>
           <img class="container__item-link" src="images/ic/go.svg" alt="#" />
         </a>
-        <a class="container__item swiper-slide hidden-item">
+        <a class="container__item hidden-item">
           <img class="container__item-logo" src="images/10.svg" alt="#" />
           <p class="container__item-name"></p>
           <img class="container__item-link" src="images/ic/go.svg" alt="#" />
         </a>
-        <a class="container__item swiper-slide hidden-item">
+        <a class="container__item hidden-item">
           <img class="container__item-logo" src="images/3.svg" alt="#" />
           <p class="container__item-name"></p>
           <img class="container__item-link" src="images/ic/go.svg" alt="#" />
         </a>
       </div>
-      <div class="main__swiper-switch swiper-pagination">
-        <div class="swiper-switch__buttons">
-          <a><img src="images/OvalBlock.svg" alt="#" /></a>
-        </div>
-      </div>
+
       <div class="main__show-hide">
         <img class="show-hide__vector" src="images/ic/expand.svg" alt="#" />
 
         <button class="show-hide__button">Скрыть</button>
       </div>
+      <!--<div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
     </main>
     <!-- There is no footer in this page -->
   </body>
