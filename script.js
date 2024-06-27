@@ -8,6 +8,13 @@ button.addEventListener("click", () => {
   hiddenItems.forEach((item) => item.classList.toggle("hidden"));
 });
 
+// document.addEventListener("DOMContentLoaded", () => {
+//   const width = window.innerWidth;
+//   if (width < 767) {
+//     swiper.init();
+//   } else swiper.destroy(true, true);
+// });
+
 var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
@@ -25,12 +32,15 @@ var swiper = new Swiper(".mySwiper", {
   mousewheel: true,
   keyboard: true,
 });
+if (window.matchMedia("(min-width: 767.98px)").matches) {
+  swiper.destroy();
+}
 
 // const mediaQuery = window.matchMedia(`(min-width: 768px)`);
 // mediaQuery.addEventListener("change", () => {
 //   initSwiper();
 // });
-//
+
 // if (window.innerWidth > 766) {
 //   swiper.destroy(true, true);
 // } else {
@@ -59,12 +69,3 @@ var swiper = new Swiper(".mySwiper", {
 // $(window).on("resize", function () {
 //   initSwiper();
 // });
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const width = window.innerWidth
-//   if (width < 767){
-//     const slider = new Swiper()
-//   } else (
-//     swiper.destroy(true, true);
-//   )
-// })

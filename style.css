@@ -88,8 +88,12 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
-
   .swiper {
+    height: 0;
+    width: 0;
+  }
+
+  .swiper-slide img {
     display: none;
   }
 
@@ -152,6 +156,11 @@ body {
   }
 
   .swiper {
+    height: 0;
+    width: 0;
+  }
+
+  .swiper-slide img {
     display: none;
   }
 
