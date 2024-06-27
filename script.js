@@ -8,13 +8,6 @@ button.addEventListener("click", () => {
   hiddenItems.forEach((item) => item.classList.toggle("hidden"));
 });
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   const width = window.innerWidth;
-//   if (width < 767) {
-//     swiper.init();
-//   } else swiper.destroy(true, true);
-// });
-
 var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
@@ -35,6 +28,13 @@ var swiper = new Swiper(".mySwiper", {
 if (window.matchMedia("(min-width: 767.98px)").matches) {
   swiper.destroy();
 }
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const width = window.innerWidth;
+//   if (width < 767) {
+//     swiper.init();
+//   } else swiper.destroy(true, true);
+// });
 
 // const mediaQuery = window.matchMedia(`(min-width: 768px)`);
 // mediaQuery.addEventListener("change", () => {
