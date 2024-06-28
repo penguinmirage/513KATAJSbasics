@@ -1,12 +1,26 @@
-const button = document.querySelector(".show-hide__button");
-const hiddenItems = document.querySelectorAll(".hidden-item");
-let isHidden = true;
-button.addEventListener("click", () => {
-  button.textContent = isHidden ? "Показать все" : "Скрыть";
+if (window.matchMedia("(min-width: 1119px)").matches) {
+  const button = document.querySelector(".show-hide__button");
+  const hiddenItems = document.querySelectorAll(".hidden-item-desktop");
+  let isHidden = true;
+  button.addEventListener("click", () => {
+    button.textContent = isHidden ? "Показать все" : "Скрыть";
 
-  isHidden = !isHidden;
-  hiddenItems.forEach((item) => item.classList.toggle("hidden"));
-});
+    isHidden = !isHidden;
+    hiddenItems.forEach((item) => item.classList.toggle("hidden"));
+  });
+} else {
+  const button = document.querySelector(".show-hide__button");
+  const hiddenItems = document.querySelectorAll(".hidden-item");
+  let isHidden = true;
+  button.addEventListener("click", () => {
+    button.textContent = isHidden ? "Показать все" : "Скрыть";
+
+    isHidden = !isHidden;
+    hiddenItems.forEach((item) => item.classList.toggle("hidden"));
+  });
+}
+
+//.hidden-item-desktop
 
 var swiper = new Swiper(".mySwiper", {
   navigation: {
